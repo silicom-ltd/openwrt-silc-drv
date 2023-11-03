@@ -524,7 +524,7 @@ static struct mc_subled cordoba_fp_center_mc_subled_info[] __initdata = {
 	{
 		.color_index = LED_COLOR_ID_GREEN,
 		.brightness = 1,
-		.intensity = 0,
+		.intensity = 1,
 		.channel = OFFSET_BIT_TO_CHANNEL(0x08, 4),
 	},
 	{
@@ -551,7 +551,7 @@ static struct mc_subled cordoba_fp_right_mc_subled_info[] __initdata = {
 	{
 		.color_index = LED_COLOR_ID_GREEN,
 		.brightness = 1,
-		.intensity = 0,
+		.intensity = 1,
 		.channel = OFFSET_BIT_TO_CHANNEL(0x08, 1),
 	},
 	{
@@ -583,7 +583,7 @@ static struct led_classdev_mc cordoba_mc_led_info[] __initdata = {
 	{
 		.led_cdev = {
 			.name = "multicolor:fp_center",
-			.brightness = 0,
+			.brightness = 1,
 			.max_brightness = 1,
 			.brightness_set = silicom_mec_led_mc_brightness_set,
 			.brightness_get = silicom_mec_led_mc_brightness_get,
@@ -594,7 +594,7 @@ static struct led_classdev_mc cordoba_mc_led_info[] __initdata = {
 	{
 		.led_cdev = {
 			.name = "multicolor:fp_right",
-			.brightness = 0,
+			.brightness = 1,
 			.max_brightness = 1,
 			.brightness_set = silicom_mec_led_mc_brightness_set,
 			.brightness_get = silicom_mec_led_mc_brightness_get,
